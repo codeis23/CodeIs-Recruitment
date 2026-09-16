@@ -1,0 +1,181 @@
+<svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!--
+    CODEIS CLUB — CiS Circuit Logo (Original Trace)
+    Three concentric octagonal C-shapes, opening right,
+    with PCB connector tabs at top-right and bottom-right,
+    circuit nodes + traces on the left arm interior,
+    and "iS" lettermark centered.
+    
+    Color scheme: yellow (#F2C230) main strokes, pink (#E91E7B) accent nodes
+  -->
+
+  <!-- ==================== OUTER C RING ==================== -->
+  <!-- Top arm + left arc + bottom arm of outermost C -->
+  <path
+    d="
+      M 152,18
+      L 58,18
+      L 28,48
+      L 28,152
+      L 58,182
+      L 152,182
+    "
+    stroke="#F2C230"
+    stroke-width="5"
+    stroke-linecap="square"
+    fill="none"
+  />
+  <!-- Top-right connector tab (outer) -->
+  <path
+    d="
+      M 152,18
+      L 172,18
+      L 184,30
+      L 184,58
+    "
+    stroke="#F2C230"
+    stroke-width="5"
+    stroke-linecap="square"
+    fill="none"
+  />
+  <!-- Bottom-right connector tab (outer) -->
+  <path
+    d="
+      M 152,182
+      L 172,182
+      L 184,170
+      L 184,142
+    "
+    stroke="#F2C230"
+    stroke-width="5"
+    stroke-linecap="square"
+    fill="none"
+  />
+
+  <!-- ==================== MIDDLE C RING ==================== -->
+  <path
+    d="
+      M 148,30
+      L 62,30
+      L 40,52
+      L 40,148
+      L 62,170
+      L 148,170
+    "
+    stroke="#F2C230"
+    stroke-width="3.5"
+    stroke-linecap="square"
+    fill="none"
+    opacity="0.85"
+  />
+  <!-- Top-right connector tab (middle) -->
+  <path
+    d="
+      M 148,30
+      L 165,30
+      L 174,42
+      L 174,64
+    "
+    stroke="#F2C230"
+    stroke-width="3.5"
+    stroke-linecap="square"
+    fill="none"
+    opacity="0.85"
+  />
+  <!-- Bottom-right connector tab (middle) -->
+  <path
+    d="
+      M 148,170
+      L 165,170
+      L 174,158
+      L 174,136
+    "
+    stroke="#F2C230"
+    stroke-width="3.5"
+    stroke-linecap="square"
+    fill="none"
+    opacity="0.85"
+  />
+
+  <!-- ==================== INNER C RING ==================== -->
+  <path
+    d="
+      M 144,42
+      L 66,42
+      L 52,56
+      L 52,144
+      L 66,158
+      L 144,158
+    "
+    stroke="#F2C230"
+    stroke-width="2.5"
+    stroke-linecap="square"
+    fill="none"
+    opacity="0.7"
+  />
+  <!-- Top-right connector tab (inner) -->
+  <path
+    d="
+      M 144,42
+      L 158,42
+      L 165,52
+      L 165,70
+    "
+    stroke="#F2C230"
+    stroke-width="2.5"
+    stroke-linecap="square"
+    fill="none"
+    opacity="0.7"
+  />
+  <!-- Bottom-right connector tab (inner) -->
+  <path
+    d="
+      M 144,158
+      L 158,158
+      L 165,148
+      L 165,130
+    "
+    stroke="#F2C230"
+    stroke-width="2.5"
+    stroke-linecap="square"
+    fill="none"
+    opacity="0.7"
+  />
+
+  <!-- ==================== PCB CIRCUIT NODES (left arm) ==================== -->
+  <!-- Vertical connector trace from top node to middle node to bottom node -->
+  <line x1="50" y1="74" x2="50" y2="126" stroke="#E91E7B" stroke-width="2.5"/>
+  <!-- Horizontal trace from vertical to left wall of inner ring -->
+  <line x1="52" y1="74" x2="64" y2="74" stroke="#E91E7B" stroke-width="2"/>
+  <line x1="52" y1="100" x2="64" y2="100" stroke="#E91E7B" stroke-width="2"/>
+  <line x1="52" y1="126" x2="64" y2="126" stroke="#E91E7B" stroke-width="2"/>
+
+  <!-- Node circles -->
+  <circle cx="50" cy="74"  r="5.5" fill="#E91E7B" stroke="#F2C230" stroke-width="2"/>
+  <circle cx="50" cy="100" r="5.5" fill="#E91E7B" stroke="#F2C230" stroke-width="2"/>
+  <circle cx="50" cy="126" r="5.5" fill="#E91E7B" stroke="#F2C230" stroke-width="2"/>
+
+  <!-- ==================== iS LETTERMARK ==================== -->
+  <!-- lowercase i -->
+  <text
+    x="92"
+    y="116"
+    font-family="Georgia, 'Playfair Display', serif"
+    font-style="italic"
+    font-size="44"
+    font-weight="700"
+    fill="#F2C230"
+    dominant-baseline="auto"
+  >i</text>
+  <!-- uppercase S -->
+  <text
+    x="112"
+    y="116"
+    font-family="Georgia, 'Playfair Display', serif"
+    font-style="italic"
+    font-size="44"
+    font-weight="700"
+    fill="#F5F0DC"
+    dominant-baseline="auto"
+  >S</text>
+</svg>

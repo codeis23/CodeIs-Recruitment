@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codeis Club Recruitment 2026 — Join Campus Builders</title>
+  <meta name="description"
+    content="Official recruitment portal for Codeis Club — Campus builders, hackers, designers, and thinkers who ship every week. Apply for Batch of 2026.">
+  <meta name="keywords"
+    content="Codeis Club, Campus Tech Society, Recruitment, Engineering, Design, AI, Hardware, Hackathons">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="Gemini_Generated_Image_rgni14rgni14rgni.png">
+</head>
+
+<body>
+
+  <!-- ==================== HEADER / NAV ==================== -->
+  <header>
+    <nav>
+      <a href="#" class="brand-link">
+        <img src="Gemini_Generated_Image_rgni14rgni14rgni.png" alt="Codeis Club" class="brand-svg-logo" width="46"
+          height="46">
+        <div class="brand-text">CODEIS<br>CLUB</div>
+      </a>
+
+      <div class="nav-links">
+        <a href="#about">The Vibe</a>
+        <a href="#tracks">Tracks</a>
+        <a href="#process">Process</a>
+        <a href="#board">Notice Board</a>
+        <a href="#faqs">FAQs</a>
+      </div>
+
+      <div class="nav-actions">
+        <button id="soundToggleBtn" class="sound-toggle-btn" title="Toggle 8-Bit SFX">🔊 SFX: ON</button>
+        <a href="#apply" class="join-nav-btn">APPLY NOW ✦</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero" id="hero">
+      <!-- Logo Watermark -->
+      <img src="codeis-logo.svg" alt="" class="hero-logo-watermark" aria-hidden="true">
+      <div class="hero-meta-pill">
+        <span class="pulse-dot"></span>
+        RECRUITMENT OPEN · FALL BATCH '26
+      </div>
+
+      <div class="hero-title-container">
+        <h1 class="hero-title">
+          CODEIS CLUB
+        </h1>
+      </div>
+
+      <p class="hero-sub">
+        A community of campus builders, hackers, and designers who’d rather ship something real tonight than plan
+        something big someday. No lectures, no gatekeeping — just laptops, hot chai, and whatever you’re building this
+        week.
+      </p>
+
+      <div class="hero-cta-group">
+        <a href="#apply" class="btn-primary">START APPLICATION ✦</a>
+        <a href="#tracks" class="btn-secondary">EXPLORE TRACKS ↓</a>
+      </div>
+
+      <!-- Live Deadline Countdown -->
+      <div class="countdown-wrapper">
+        <div class="countdown-container">
+          <div class="countdown-label">Applications Close In</div>
+          <div class="countdown-grid">
+            <div class="countdown-box">
+              <span class="countdown-num" id="app_days">00</span>
+              <span class="countdown-unit">DAYS</span>
+            </div>
+            <div class="countdown-divider">:</div>
+            <div class="countdown-box">
+              <span class="countdown-num" id="app_hours">00</span>
+              <span class="countdown-unit">HRS</span>
+            </div>
+            <div class="countdown-divider">:</div>
+            <div class="countdown-box">
+              <span class="countdown-num" id="app_mins">00</span>
+              <span class="countdown-unit">MINS</span>
+            </div>
+            <div class="countdown-divider">:</div>
+            <div class="countdown-box">
+              <span class="countdown-num" id="app_secs">00</span>
+              <span class="countdown-unit">SECS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="countdown-container">
+          <div class="countdown-label">Submissions Close In</div>
+          <div class="countdown-grid">
+            <div class="countdown-box">
+              <span class="countdown-num" id="sub_days">00</span>
+              <span class="countdown-unit">DAYS</span>
+            </div>
+            <div class="countdown-divider">:</div>
+            <div class="countdown-box">
+              <span class="countdown-num" id="sub_hours">00</span>
+              <span class="countdown-unit">HRS</span>
+            </div>
+            <div class="countdown-divider">:</div>
+            <div class="countdown-box">
+              <span class="countdown-num" id="sub_mins">00</span>
+              <span class="countdown-unit">MINS</span>
+            </div>
+            <div class="countdown-divider">:</div>
+            <div class="countdown-box">
+              <span class="countdown-num" id="sub_secs">00</span>
+              <span class="countdown-unit">SECS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== MARQUEE DIVIDER ==================== -->
+    <div class="marquee">
+      <div class="marquee-track">
+        <span>✦ NO RESUME FILTER</span>
+        <span>✦ 40 OPEN SLOTS</span>
+        <span>✦ FREE CHAI & SNACKS</span>
+        <span>✦ HACKATHON SQUADS</span>
+        <span>✦ NO RESUME FILTER</span>
+        <span>✦ 40 OPEN SLOTS</span>
+        <span>✦ FREE CHAI & SNACKS</span>
+        <span>✦ HACKATHON SQUADS</span>
+        <span>✦ NO RESUME FILTER</span>
+        <span>✦ 40 OPEN SLOTS</span>
+        <span>✦ FREE CHAI & SNACKS</span>
+        <span>✦ HACKATHON SQUADS</span>
+      </div>
+    </div>
+
+    <!-- ==================== STATS / SIGNPOST ==================== -->
+    <section class="stats-section" id="about">
+      <div class="wrap">
+        <div class="section-tag">Numbers & Impact</div>
+        <h2 class="section-title">Where We Stand</h2>
+        <p class="section-subtitle">We judge our club not by member count or titles, but by the tangible software,
+          hardware, and design we put into the wild.</p>
+
+        <div class="signpost">
+          <div class="sign yellow">
+            <span>50+</span>
+            <small>ACTIVE BUILDERS</small>
+          </div>
+          <div class="pole"></div>
+          <div class="sign pink">
+            <span>35+</span>
+            <small>PROJECTS SHIPPED</small>
+          </div>
+          <div class="pole"></div>
+          <div class="sign yellow">
+            <span>₹75k+</span>
+            <small>HACKATHON WINS</small>
+          </div>
+          <div class="pole"></div>
+          <div class="sign pink">
+            <span>100%</span>
+            <small>PEER MENTORED</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rangoli Trim 1 -->
+    <div class="trim">
+      <div class="trim-row" id="trimRow1"></div>
+    </div>
+
+    <!-- ==================== TRACKS / DOMAINS ==================== -->
+    <section class="tracks-section" id="tracks">
+      <div class="wrap">
+        <div class="section-tag">Find Your Niche</div>
+        <h2 class="section-title">Recruitment Tracks</h2>
+        <p class="section-subtitle">Pick the domain where your curiosity thrives. You don't need to be an expert — you
+          just need an obsession to learn and create.</p>
+
+        <!-- Track Tabs -->
+        <div class="track-tabs">
+          <button class="track-tab-btn active" data-track="eng">⚡ Engineering & Tech</button>
+          <button class="track-tab-btn" data-track="ai">💸 Finance </button>
+          <button class="track-tab-btn" data-track="design"> 📽️ Social Media & Marketing </button>
+        </div>
+
+        <!-- Dynamic Track Card -->
+        <div class="track-content-card" id="trackContentCard">
+          <div class="track-visual">
+            <div class="track-icon-wrapper" id="trackIcon">⚡</div>
+            <span class="track-seats-badge" id="trackSeats">12 OPEN SLOTS</span>
+            <span class="track-seats-badge" id="trackStatusBadge" style="display:none; margin-top:10px;">TEST THIS FRIDAY</span>
+          </div>
+
+          <div class="track-details">
+            <h3 id="trackTitle">Engineering & Tech</h3>
+            
+            <div id="trackTestAnnouncement" class="track-test-announcement" style="display:none;">
+              <div class="test-label">FINANCE SELECTION TEST</div>
+              <div class="test-day" id="testAnnounceDay">THIS FRIDAY</div>
+              <div class="test-sub">Be ready. The test is the first stage of the Finance track selection.</div>
+            </div>
+
+            <div class="track-tagline" id="trackTagline">Build production apps, CLI tools, web platforms & cloud
+              backends.</div>
+            <p class="track-desc" id="trackDesc">
+              We don't do toy 'Hello World' clones. Our engineering wing builds tools used daily by campus students,
+              automates department workflows, and competes in national hackathons.
+            </p>
+
+            <div id="trackTestInfoRow" class="test-info-row" style="display:none;"></div>
+
+            <div class="track-skills-list" id="trackSkills">
+              <span class="skill-chip">MERN Stack</span>
+              <span class="skill-chip">AI & ML</span>
+              <span class="skill-chip">Python Backend</span>
+              <span class="skill-chip">App Development</span>
+              <span class="skill-chip">Databases</span>
+              <span class="skill-chip">Prompt engineering</span>
+            </div>
+
+            <ul class="track-points" id="trackPoints">
+              <li>Ship scalable web applications and campus microservices.</li>
+              <li>Work directly with developers and project maintainers.</li>
+              <li>Represent Codeis Club in Smart India Hackathon and global hackathons.</li>
+            </ul>
+
+            <div id="trackSocialChallenge" class="track-social-challenge" style="display:none;">
+              <div class="challenge-label">YOUR CHALLENGE</div>
+              <div class="challenge-title">Make a short video marketing CodeIs.</div>
+              <div class="challenge-steps">CREATE &rarr; POST &rarr; TAG &rarr; SUBMIT</div>
+              <div class="challenge-post">Post it on Instagram and tag <strong style="color:var(--pink);">@CODEIS_OFFICIAL</strong>.</div>
+              <div class="challenge-footer">Your video is your application.</div>
+            </div>
+
+            <div id="trackEngChallenge" class="track-eng-challenge" style="display:block;">
+              <div class="eng-challenge-label">ENGINEERING CHALLENGE</div>
+              <div class="eng-challenge-title">Your challenge details are in the official Challenge Brief.</div>
+              <div class="eng-challenge-desc">Read the brief carefully before you start. It contains the problem statement, requirements, constraints, submission format, deadline, and evaluation criteria.</div>
+              <div class="eng-challenge-actions">
+                <a href="./docs/AI_Build_Challenge_Brief.pdf" id="engBriefBtn" class="btn-primary" target="_blank" rel="noopener">VIEW CHALLENGE BRIEF ↗️</a>
+                <a href="#apply" id="engSubmitBtn" class="btn-secondary" target="_blank" rel="noopener">SUBMIT YOUR CHALLENGE ↗️</a>
+              </div>
+            </div>
+
+            <div class="track-actions" id="trackActions" style="display:none;">
+              <button class="btn-primary" id="trackApplyBtn" data-target-track="eng">APPLY FOR THIS TRACK ↗</button>
+              <a href="#process" class="btn-secondary">SEE SELECTION FLOW</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rangoli Trim 2 -->
+    <div class="trim">
+      <div class="trim-row" id="trimRow2"></div>
+    </div>
+
+    <!-- ==================== RECRUITMENT ROADMAP ==================== -->
+    <section class="roadmap-section" id="process">
+      <div class="wrap">
+        <div class="section-tag">How It Works</div>
+        <h2 class="section-title">The Selection Roadmap</h2>
+        <p class="section-subtitle">From application to onboarding — show us what you can build, how you think, and how you collaborate.</p>
+
+        <div class="process-grid">
+          <div class="process-card">
+            <div class="process-step-num">
+              <span>STEP 01</span>
+              <span>✦</span>
+            </div>
+            <div class="process-icon">📝</div>
+            <h4>Apply</h4>
+            <p>Fill out the application form with your basic details and choose the track you want to join.</p>
+          </div>
+
+          <div class="process-card">
+            <div class="process-step-num">
+              <span>STEP 02</span>
+              <span>✦</span>
+            </div>
+            <div class="process-icon">🛠️</div>
+            <h4>Complete the Challenge</h4>
+            <p>Receive a track-specific mini challenge. Build, design, solve, or create something that demonstrates how you think and work.</p>
+          </div>
+
+          <div class="process-card">
+            <div class="process-step-num">
+              <span>STEP 03</span>
+              <span>✦</span>
+            </div>
+            <div class="process-icon">📤</div>
+            <h4>Submit the Challenge</h4>
+            <p>Submit your completed challenge before the deadline. Show us your approach, creativity, and execution.</p>
+          </div>
+
+          <div class="process-card">
+            <div class="process-step-num">
+              <span>STEP 04</span>
+              <span>✦</span>
+            </div>
+            <div class="process-icon">👥</div>
+            <h4>Face-to-Face Interview</h4>
+            <p>Shortlisted applicants meet the CodeIs team for a relaxed face-to-face conversation about their work, interests, and expectations.</p>
+          </div>
+
+          <div class="process-card">
+            <div class="process-step-num">
+              <span>STEP 05</span>
+              <span>✦</span>
+            </div>
+            <div class="process-icon">🎉</div>
+            <h4>Onboarding</h4>
+            <p>Welcome to CodeIs. Meet your squad, and start building with us.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== NOTICE BOARD ==================== -->
+    <section class="board-section" id="board">
+      <div class="wrap">
+        <div class="section-tag">Pinned Up</div>
+        <h2 class="section-title">Recruitment Information Board</h2>
+        <p class="section-subtitle">Everything you need to know before you join CodeIs.</p>
+
+        <div class="board-grid">
+          <div class="board-card">
+            <div class="board-pin"></div>
+            <div class="board-category">RECRUITMENT</div>
+            <h3>Recruitment Is Open</h3>
+            <p class="board-card-body">Applications for CodeIs are now open. Pick your track, complete the selection task, and show us what you can build.</p>
+            <div class="board-card-footer">
+              <a href="#tracks" class="board-pill" style="text-decoration:none;">EXPLORE TRACKS &rarr;</a>
+              <span class="board-date">RECRUITMENT</span>
+            </div>
+          </div>
+
+          <div class="board-card">
+            <div class="board-pin"></div>
+            <div class="board-category">SELECTION</div>
+            <h3>Your Challenge Awaits</h3>
+            <p class="board-card-body">Every track has a different way of selecting members. Engineering builds. Finance tests. Social Media creates.</p>
+            <div class="board-card-footer">
+              <a href="#tracks" class="board-pill" style="text-decoration:none;">VIEW CHALLENGES &rarr;</a>
+              <span class="board-date">SELECTION PROCESS</span>
+            </div>
+          </div>
+
+          <div class="board-card">
+            <div class="board-pin"></div>
+            <div class="board-category">DEADLINE</div>
+            <h3>Don't Miss Your Slot</h3>
+            <p class="board-card-body">Check your selected track for the challenge deadline and submission instructions.</p>
+            <div class="board-card-footer">
+              <a href="#process" class="board-pill" style="text-decoration:none;">CHECK DEADLINES &rarr;</a>
+              <span class="board-date">IMPORTANT</span>
+            </div>
+          </div>
+
+          <div class="board-card">
+            <div class="board-pin"></div>
+            <div class="board-category">HELP</div>
+            <h3>Recruitment FAQ</h3>
+            <p class="board-card-body">Confused about the challenge, submission, or selection process? Find the answers before you start.</p>
+            <div class="board-card-footer">
+              <a href="#faqs" class="board-pill" style="text-decoration:none;">READ FAQ &rarr;</a>
+              <span class="board-date">GUIDE</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== APPLICATION PORTAL & LIVE PASS ==================== -->
+    <section class="apply-section" id="apply">
+      <div class="wrap">
+        <div class="section-tag">Candidate Application</div>
+        <h2 class="section-title">Join The Batch of 2026</h2>
+        <p class="section-subtitle">Fill in your information to generate your personalized Codeis Applicant Pass and
+          submit your application.</p>
+
+        <div class="apply-container">
+          <!-- Multi-Step Application Form -->
+          <div class="form-wrapper">
+            <!-- Step Indicators -->
+            <div class="form-step-indicator">
+              <div class="step-node active" id="stepNode1">1</div>
+              <div class="step-node" id="stepNode2">2</div>
+              <div class="step-node" id="stepNode3">3</div>
+            </div>
+
+            <form id="recruitmentForm" novalidate>
+              <!-- STEP 1: Personal Details -->
+              <div class="form-step active" id="formStep1">
+                <h3>1. Personal & Campus Info</h3>
+                <p class="form-step-desc">Tell us who you are and where you study on campus.</p>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label" for="applicantName">Full Name *</label>
+                    <input type="text" id="applicantName" class="form-input" placeholder="e.g. Alex Mercer">
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="applicantPhone">Phone No *</label>
+                    <input type="tel" id="applicantPhone" class="form-input" placeholder="e.g. +91 9876543210">
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label" for="applicantEmail">Email Address *</label>
+                    <input type="email" id="applicantEmail" class="form-input" placeholder="you@campus.edu">
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="applicantUSN">Roll No / USN *</label>
+                    <input type="text" id="applicantUSN" class="form-input" placeholder="e.g. 1MS24CS042">
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label" for="applicantYear">Year of Study</label>
+                    <select id="applicantYear" class="form-select">
+                      <option value="1st Year">1st Year (Freshman)</option>
+                      <option value="2nd Year">2nd Year (Sophomore)</option>
+                      <option value="3rd Year">3rd Year (Junior)</option>
+                      <option value="4th Year">4th Year (Senior)</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="applicantBranch">Branch / Major *</label>
+                    <input type="text" id="applicantBranch" class="form-input" placeholder="e.g. Computer Science">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label">Pick Your Avatar</label>
+                  <div class="avatar-picker-group">
+                    <div class="avatar-opt selected" data-avatar="👾">👾</div>
+                    <div class="avatar-opt" data-avatar="⚡">⚡</div>
+                    <div class="avatar-opt" data-avatar="🚀">🚀</div>
+                    <div class="avatar-opt" data-avatar="🎨">🎨</div>
+                    <div class="avatar-opt" data-avatar="🤖">🤖</div>
+                    <div class="avatar-opt" data-avatar="☕">☕</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- STEP 2: Track & Skills -->
+              <div class="form-step" id="formStep2">
+                <h3>2. Choose Your Track</h3>
+                <p class="form-step-desc">Select the primary domain you want to contribute to.</p>
+
+                <div class="track-selection-grid">
+                  <label class="track-option-card selected">
+                    <input type="radio" name="primaryTrack" value="eng" checked>
+                    <div>
+                      <div style="font-size:13.5px; font-weight:700;">⚡ Engineering & Web</div>
+                      <div style="font-size:11.5px; color:#666;">Fullstack, microservices, bots</div>
+                    </div>
+                  </label>
+
+                  <label class="track-option-card">
+                    <input type="radio" name="primaryTrack" value="ai">
+                    <div>
+                      <div style="font-size:13.5px; font-weight:700;">💸 Finance & Markets</div>
+                      <div style="font-size:11.5px; color:#666;">Analysis, markets, logic</div>
+                    </div>
+                  </label>
+
+                  <label class="track-option-card">
+                    <input type="radio" name="primaryTrack" value="design">
+                    <div>
+                      <div style="font-size:13.5px; font-weight:700;">📽️ Social Media & Marketing</div>
+                      <div style="font-size:11.5px; color:#666;">Video, content, branding</div>
+                    </div>
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="applicantLinks">GitHub / Portfolio / Socials Link</label>
+                  <input type="url" id="applicantLinks" class="form-input"
+                    placeholder="https://github.com/username or portfolio link">
+                </div>
+              </div>
+
+              <!-- STEP 3: The Vibe Check -->
+              <div class="form-step" id="formStep3">
+                <h3>3. The Vibe Check</h3>
+                <p class="form-step-desc">Two quick questions — answer casually, no corporate jargon.</p>
+
+                <div class="form-group">
+                  <label class="form-label" for="qProud">What is something you built, designed, or broke and fixed that
+                    you're proud of?</label>
+                  <textarea id="qProud" class="form-textarea"
+                    placeholder="Could be a script, a game mod, a Figma screen, a broken headphone repair, or a cool side project..."></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="qGoal">What would you love to build or learn at Codeis this
+                    semester?</label>
+                  <textarea id="qGoal" class="form-textarea"
+                    placeholder="Tell us your wildest project idea or skill you want to master..."></textarea>
+                </div>
+              </div>
+
+              <!-- Form Navigation Buttons -->
+              <div class="form-nav-actions">
+                <button type="button" class="btn-secondary" id="formPrevBtn" style="display:none;">← PREVIOUS</button>
+                <button type="button" class="btn-primary" id="formNextBtn">NEXT STEP →</button>
+                <button type="submit" class="btn-primary" id="formSubmitBtn" style="display:none;">SUBMIT APPLICATION
+                  ✦</button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Live Applicant Pass (Ticket Card) -->
+          <div class="pass-wrapper">
+            <div class="pass-card-title">✦ LIVE APPLICANT PASS ✦</div>
+            <div class="ticket-pass" id="ticketPassElement">
+              <div class="ticket-header">
+                <div class="ticket-header-logo">CODEIS CLUB</div>
+                <div class="ticket-header-batch">BATCH 2026</div>
+              </div>
+
+              <div class="ticket-body">
+                <div class="ticket-stamp">APPLIED</div>
+
+                <div class="ticket-profile-row">
+                  <div class="ticket-avatar" id="ticketAvatar">👾</div>
+                  <div class="ticket-info">
+                    <h4 id="ticketName">Alex Mercer</h4>
+                    <div class="ticket-meta" id="ticketMeta">1st Year · Batch of 2026</div>
+                    <span class="ticket-track-badge" id="ticketTrackBadge">★ Engineering & Web</span>
+                  </div>
+                </div>
+
+                <div class="ticket-details-grid">
+                  <div class="ticket-detail-item">
+                    <div class="ticket-detail-label">Roll / USN</div>
+                    <div class="ticket-detail-val" id="ticketRoll">1MS24CS042</div>
+                  </div>
+                  <div class="ticket-detail-item">
+                    <div class="ticket-detail-label">Major / Branch</div>
+                    <div class="ticket-detail-val" id="ticketBranch">Computer Science</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ticket-barcode-row">
+                <div class="ticket-barcode" id="ticketBarcode">||| | |||| || ||| |||| | |||</div>
+                <div class="ticket-pass-id" id="ticketPassId">CIS-26-8492</div>
+              </div>
+            </div>
+
+            <div class="pass-actions">
+              <button class="btn-primary" id="downloadPassBtn" style="font-size:13px; padding:10px 20px;">
+                📥 DOWNLOAD PASS PNG
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FAQS SECTION ==================== -->
+    <section class="faq-section" id="faqs">
+      <div class="wrap">
+        <div class="section-tag">Clarifications</div>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Everything you wanted to know about how Codeis Club works.</p>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Do I need prior coding or design experience to apply?</span>
+              <span class="faq-toggle-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              No! We care far more about your curiosity, consistency, and excitement to get your hands dirty than a
+              fancy resume. Many of our strongest developers and designers started with zero prior knowledge.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Can 1st year (freshmen) students join?</span>
+              <span class="faq-toggle-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              Yes, absolutely. In fact, over 60% of our recruitment intake is dedicated to 1st and 2nd years so that you
+              get full peer mentorship throughout your campus journey.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>What is the expected weekly time commitment?</span>
+              <span class="faq-toggle-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              You can expect to spend a few hours a week collaborating with your squad on projects and hackathons. We value quality over endless meetings.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Can I apply for multiple tracks if I have multidisciplinary interests?</span>
+              <span class="faq-toggle-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              Yes! You can choose your primary track in the application form and mention any secondary interests (e.g.
+              UI Design + Frontend, or IoT + AI) in your vibe check responses.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Are there membership fees or club dues?</span>
+              <span class="faq-toggle-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              Zero. Codeis Club is 100% free and funded by hackathon prizes, community sponsors, and department grants.
+              Snacks, chai, cloud credits, and hardware components are completely free for active members.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rangoli Trim 4 -->
+    <div class="trim">
+      <div class="trim-row" id="trimRow4"></div>
+    </div>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer>
+    <div class="footer-brand">
+      <img src="Gemini_Generated_Image_rgni14rgni14rgni.png" alt="Codeis Club" width="38" height="38"
+        style="mix-blend-mode:multiply;">
+      CODEIS CLUB
+    </div>
+    <div class="footer-meta">CAMPUS TECH & BUILDER SOCIETY · TUESDAYS 7PM · ROOM 304</div>
+    <div class="footer-socials">
+      <a href="https://github.com" target="_blank" rel="noopener">GitHub ↗</a>
+      <a href="https://twitter.com" target="_blank" rel="noopener">Twitter / X ↗</a>
+      <a href="https://instagram.com" target="_blank" rel="noopener">Instagram ↗</a>
+      <a href="mailto:codeis@campus.edu">codeis@campus.edu</a>
+    </div>
+    <div class="footer-copy">
+      © 2026 Codeis Club. Built with passion, chai, and code by members, for members.
+    </div>
+  </footer>
+
+  <!-- ==================== APPLICATION SUCCESS MODAL ==================== -->
+  <div class="modal-overlay" id="successModal">
+    <div class="modal-box">
+      <div class="modal-icon">🎉</div>
+      <h3>APPLICATION RECEIVED ✦</h3>
+      <p>
+        Your CodeIs application has been submitted successfully.
+      </p>
+      <p style="font-size:13.5px; color:#555; margin-bottom:28px;">
+        Keep an eye on your email for the next step.
+      </p>
+      <div style="display:flex; gap:12px; justify-content:center;">
+        <button class="btn-primary" id="modalCloseBtn">AWESOME, GOT IT! ✦</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Confetti Canvas -->
+  <canvas id="confettiCanvas"></canvas>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
