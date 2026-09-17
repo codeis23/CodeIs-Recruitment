@@ -94,9 +94,10 @@ function initCountdown() {
   appDeadline.setDate(now.getDate() + ((5 - now.getDay() + 7) % 7));
   appDeadline.setHours(23, 59, 59, 0);
 
-  // Sub Deadline: Day after App Deadline (Saturday) at 23:59:59
-  const subDeadline = new Date(appDeadline);
-  subDeadline.setDate(appDeadline.getDate() + 1);
+  // Sub Deadline: Next Sunday at 12:00:00
+  const subDeadline = new Date(now);
+  subDeadline.setDate(now.getDate() + ((0 - now.getDay() + 7) % 7));
+  subDeadline.setHours(12, 0, 0, 0);
 
   function updateTimers() {
     const current = new Date().getTime();
