@@ -678,13 +678,8 @@ function submitApplication() {
     if (modalName) modalName.textContent = name;
     if (modal) modal.classList.add('open');
     
-    const appForm = document.getElementById('recruitmentForm');
-    if (appForm) {
-      appForm.reset();
-      currentStep = 1;
-      goToStep(1);
-      updatePassPreview();
-    }
+    // Keep data until download or refresh
+    window.hasSubmittedPass = true;
   }).catch(error => {
     console.error('Submission failed:', error);
     alert('SUBMISSION FAILED\nSomething went wrong while sending your application. Please check your connection and try again.');
@@ -834,6 +829,17 @@ function downloadPassImage() {
   link.download = `${name.toLowerCase().replace(/\s+/g, '-')}-codeis-pass.png`;
   link.href = canvas.toDataURL('image/png');
   link.click();
+
+  if (window.hasSubmittedPass) {
+    const appForm = document.getElementById('recruitmentForm');
+    if (appForm) {
+      appForm.reset();
+      currentStep = 1;
+      goToStep(1);
+      updatePassPreview();
+      window.hasSubmittedPass = false;
+    }
+  }
 }
 
 /* =========================================================

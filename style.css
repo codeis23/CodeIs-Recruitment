@@ -136,7 +136,7 @@ nav {
   width: 42px; height: 42px;
   object-fit: contain; flex-shrink: 0;
   transition: transform 0.3s ease;
-  mix-blend-mode: multiply;
+  filter: invert(1) brightness(1.5); mix-blend-mode: screen;
 }
 .brand-link:hover .brand-svg-logo { transform: rotate(-5deg) scale(1.1); }
 
