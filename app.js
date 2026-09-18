@@ -246,7 +246,7 @@ const tracksData = {
 };
 
 const financeTest = {
-  day: "This Friday",
+  day: "This Monday",
   date: "",
   time: "",
   duration: "",
