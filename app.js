@@ -106,6 +106,17 @@ function initCountdown() {
     const appDiff = appDeadline.getTime() - current;
     updateTimerUI('app', appDiff);
 
+    // Hide Application Timer and show Submission buttons if App deadline passed
+    const appContainer = document.getElementById('app_countdown_container');
+    const subButtons = document.getElementById('submission_buttons');
+    if (appDiff <= 0) {
+      if (appContainer) appContainer.style.display = 'none';
+      if (subButtons) subButtons.style.display = 'flex';
+    } else {
+      if (appContainer) appContainer.style.display = '';
+      if (subButtons) subButtons.style.display = 'none';
+    }
+
     // Update Submission Timer
     const subDiff = subDeadline.getTime() - current;
     updateTimerUI('sub', subDiff);

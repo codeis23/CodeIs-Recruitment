@@ -68,7 +68,7 @@
 
       <!-- Live Deadline Countdown -->
       <div class="countdown-wrapper">
-        <div class="countdown-container">
+        <div class="countdown-container" id="app_countdown_container">
           <div class="countdown-label">Applications Close In</div>
           <div class="countdown-grid">
             <div class="countdown-box">
@@ -93,7 +93,7 @@
           </div>
         </div>
 
-        <div class="countdown-container">
+        <div class="countdown-container" id="sub_countdown_container">
           <div class="countdown-label">Submissions Close In</div>
           <div class="countdown-grid">
             <div class="countdown-box">
@@ -117,6 +117,12 @@
             </div>
           </div>
         </div>
+      </div>
+      
+      <!-- Submission Links (initially hidden) -->
+      <div id="submission_buttons" style="display: none; justify-content: center; gap: 20px; flex-wrap: wrap; margin-bottom: 40px; margin-top: 20px;">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeu4Yw5WJrv5cadVtFUPmngnFuNrVH8LVkjmL0FJZhovYgyug/viewform?usp=dialog" class="btn-primary" target="_blank">Tech Track submission</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdFBo5Gr0g2PecGoY797lnGLXv_NeZTPAIx6huXLWELReNOjg/viewform?usp=publish-editor" class="btn-secondary" target="_blank">Social Media submission</a>
       </div>
     </section>
 
