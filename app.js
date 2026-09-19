@@ -89,15 +89,15 @@ function playLevelUpChime() {
 function initCountdown() {
   const now = new Date();
   
-  // App Deadline: Next Saturday at 12:00:00
+  // App Deadline: Next Sunday at 23:59:00
   const appDeadline = new Date(now);
-  appDeadline.setDate(now.getDate() + ((6 - now.getDay() + 7) % 7));
-  appDeadline.setHours(12, 0, 0, 0);
+  appDeadline.setDate(now.getDate() + ((0 - now.getDay() + 7) % 7));
+  appDeadline.setHours(23, 59, 0, 0);
 
-  // Sub Deadline: Next Sunday at 18:00:00
+  // Sub Deadline: Next Monday at 12:00:00
   const subDeadline = new Date(now);
-  subDeadline.setDate(now.getDate() + ((0 - now.getDay() + 7) % 7));
-  subDeadline.setHours(18, 0, 0, 0);
+  subDeadline.setDate(now.getDate() + ((1 - now.getDay() + 7) % 7));
+  subDeadline.setHours(12, 0, 0, 0);
 
   function updateTimers() {
     const current = new Date().getTime();
