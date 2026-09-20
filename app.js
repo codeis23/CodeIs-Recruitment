@@ -98,9 +98,12 @@ function initCountdown() {
   const appDeadline = new Date(parseInt(savedDeadline));
 
 
-  // Sub Deadline: Next Monday at 12:00:00
+  // Sub Deadline: Next Tuesday at 12:00:00
   const subDeadline = new Date(now);
-  subDeadline.setDate(now.getDate() + ((1 - now.getDay() + 7) % 7));
+  let daysToNextDeadline = (2 - now.getDay() + 7) % 7;
+  // If it's already Tuesday and past 12pm, move to next Tuesday (though typically not needed if this is a static project, better safe)
+  if (daysToNextDeadline === 0 && now.getHours() >= 12) daysToNextDeadline = 7;
+  subDeadline.setDate(now.getDate() + daysToNextDeadline);
   subDeadline.setHours(12, 0, 0, 0);
 
   function updateTimers() {
