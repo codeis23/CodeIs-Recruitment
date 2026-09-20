@@ -89,10 +89,8 @@ function playLevelUpChime() {
 function initCountdown() {
   const now = new Date();
   
-  // App Deadline: Next Sunday at 23:59:00
-  const appDeadline = new Date(now);
-  appDeadline.setDate(now.getDate() + ((0 - now.getDay() + 7) % 7));
-  appDeadline.setHours(23, 59, 0, 0);
+  // App Deadline: 1 minute from now
+  const appDeadline = new Date(now.getTime() + 60 * 1000);
 
   // Sub Deadline: Next Monday at 12:00:00
   const subDeadline = new Date(now);
