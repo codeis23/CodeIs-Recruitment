@@ -117,19 +117,27 @@ function initCountdown() {
     const appContainer = document.getElementById('app_countdown_container');
     const subButtons = document.getElementById('submission_buttons');
     const applySection = document.getElementById('apply');
+    
+    // Update Submission Timer
+    const subDiff = subDeadline.getTime() - current;
+    updateTimerUI('sub', subDiff);
+
     if (appDiff <= 0) {
       if (appContainer) appContainer.style.display = 'none';
-      if (subButtons) subButtons.style.display = 'flex';
       if (applySection) applySection.style.display = 'none';
+      if (subButtons) {
+        // Hide submission buttons if submission deadline passed
+        if (subDiff <= 0) {
+          subButtons.style.display = 'none';
+        } else {
+          subButtons.style.display = 'flex';
+        }
+      }
     } else {
       if (appContainer) appContainer.style.display = '';
       if (subButtons) subButtons.style.display = 'none';
       if (applySection) applySection.style.display = '';
     }
-
-    // Update Submission Timer
-    const subDiff = subDeadline.getTime() - current;
-    updateTimerUI('sub', subDiff);
   }
 
   function updateTimerUI(prefix, diff) {
