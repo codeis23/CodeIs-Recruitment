@@ -4,7 +4,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   initAudio();
-  initCountdown();
+  // initCountdown removed
   initRangoliTrims();
   initTracks();
   initApplicationFlow();
