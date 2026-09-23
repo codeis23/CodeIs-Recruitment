@@ -9,7 +9,7 @@
     content="Official recruitment portal for Codeis Club — Campus builders, hackers, designers, and thinkers who ship every week. Apply for Batch of 2026.">
   <meta name="keywords"
     content="Codeis Club, Campus Tech Society, Recruitment, Engineering, Design, AI, Hardware, Hackathons">
-  <link rel="stylesheet" href="style.css?v=4">
+  <link rel="stylesheet" href="style.css?v=5">
   <link rel="icon" type="image/png" href="logo-primary.png">
 </head>
 
@@ -34,7 +34,7 @@
 
       <div class="nav-actions">
         <button id="soundToggleBtn" class="sound-toggle-btn" title="Toggle 8-Bit SFX">🔊 SFX: ON</button>
-        <a href="#apply" class="join-nav-btn">APPLY NOW ✦</a>
+        <a href="#tracks" class="join-nav-btn">APPLY NOW ✦</a>
       </div>
     </nav>
   </header>
@@ -62,7 +62,7 @@
       </p>
 
       <div class="hero-cta-group">
-        <a href="#apply" class="btn-primary">START APPLICATION ✦</a>
+        <a href="#tracks" class="btn-primary">START APPLICATION ✦</a>
         <a href="#tracks" class="btn-secondary">EXPLORE TRACKS ↓</a>
       </div>
 
@@ -346,196 +346,6 @@
     </section>
 
     <!-- ==================== APPLICATION PORTAL & LIVE PASS ==================== -->
-    <section class="apply-section" id="apply">
-      <div class="wrap">
-        <div class="section-tag">Candidate Application</div>
-        <h2 class="section-title">Join The Batch of 2026</h2>
-        <p class="section-subtitle">Fill in your information to generate your personalized Codeis Applicant Pass and
-          submit your application.</p>
-
-        <div class="apply-container">
-          <!-- Multi-Step Application Form -->
-          <div class="form-wrapper">
-            <!-- Step Indicators -->
-            <div class="form-step-indicator">
-              <div class="step-node active" id="stepNode1">1</div>
-              <div class="step-node" id="stepNode2">2</div>
-              <div class="step-node" id="stepNode3">3</div>
-            </div>
-
-            <form id="recruitmentForm" novalidate>
-              <!-- STEP 1: Personal Details -->
-              <div class="form-step active" id="formStep1">
-                <h3>1. Personal & Campus Info</h3>
-                <p class="form-step-desc">Tell us who you are and where you study on campus.</p>
-
-                <div class="form-row">
-                  <div class="form-group">
-                    <label class="form-label" for="applicantName">Full Name *</label>
-                    <input type="text" id="applicantName" class="form-input" placeholder="e.g. Alex Mercer">
-                  </div>
-                  <div class="form-group">
-                    <label class="form-label" for="applicantPhone">Phone No *</label>
-                    <input type="tel" id="applicantPhone" class="form-input" placeholder="e.g. +91 9876543210">
-                  </div>
-                </div>
-
-                <div class="form-row">
-                  <div class="form-group">
-                    <label class="form-label" for="applicantEmail">Email Address *</label>
-                    <input type="email" id="applicantEmail" class="form-input" placeholder="you@campus.edu">
-                  </div>
-                  <div class="form-group">
-                    <label class="form-label" for="applicantUSN">Roll No / USN *</label>
-                    <input type="text" id="applicantUSN" class="form-input" placeholder="e.g. 1MS24CS042">
-                  </div>
-                </div>
-
-                <div class="form-row">
-                  <div class="form-group">
-                    <label class="form-label" for="applicantYear">Year of Study</label>
-                    <select id="applicantYear" class="form-select">
-                      <option value="1st Year">1st Year (Freshman)</option>
-                      <option value="2nd Year">2nd Year (Sophomore)</option>
-                      <option value="3rd Year">3rd Year (Junior)</option>
-                      <option value="4th Year">4th Year (Senior)</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label class="form-label" for="applicantBranch">Branch / Major *</label>
-                    <input type="text" id="applicantBranch" class="form-input" placeholder="e.g. Computer Science">
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label class="form-label">Pick Your Avatar</label>
-                  <div class="avatar-picker-group">
-                    <div class="avatar-opt selected" data-avatar="👾">👾</div>
-                    <div class="avatar-opt" data-avatar="⚡">⚡</div>
-                    <div class="avatar-opt" data-avatar="🚀">🚀</div>
-                    <div class="avatar-opt" data-avatar="🎨">🎨</div>
-                    <div class="avatar-opt" data-avatar="🤖">🤖</div>
-                    <div class="avatar-opt" data-avatar="☕">☕</div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- STEP 2: Track & Skills -->
-              <div class="form-step" id="formStep2">
-                <h3>2. Choose Your Track</h3>
-                <p class="form-step-desc">Select the primary domain you want to contribute to.</p>
-
-                <div class="track-selection-grid">
-                  <label class="track-option-card selected">
-                    <input type="radio" name="primaryTrack" value="eng" checked>
-                    <div>
-                      <div style="font-size:13.5px; font-weight:700;">⚡ Engineering & Web</div>
-                      <div style="font-size:11.5px; color:#666;">Fullstack, microservices, bots</div>
-                    </div>
-                  </label>
-
-                  <label class="track-option-card">
-                    <input type="radio" name="primaryTrack" value="ai">
-                    <div>
-                      <div style="font-size:13.5px; font-weight:700;">💸 Finance & Markets</div>
-                      <div style="font-size:11.5px; color:#666;">Analysis, markets, logic</div>
-                    </div>
-                  </label>
-
-                  <label class="track-option-card">
-                    <input type="radio" name="primaryTrack" value="design">
-                    <div>
-                      <div style="font-size:13.5px; font-weight:700;">📽️ Social Media & Marketing</div>
-                      <div style="font-size:11.5px; color:#666;">Video, content, branding</div>
-                    </div>
-                  </label>
-                </div>
-
-                <div class="form-group">
-                  <label class="form-label" for="applicantLinks">GitHub / Portfolio / Socials Link</label>
-                  <input type="url" id="applicantLinks" class="form-input"
-                    placeholder="https://github.com/username or portfolio link">
-                </div>
-              </div>
-
-              <!-- STEP 3: The Vibe Check -->
-              <div class="form-step" id="formStep3">
-                <h3>3. The Vibe Check</h3>
-                <p class="form-step-desc">Two quick questions — answer casually, no corporate jargon.</p>
-
-                <div class="form-group">
-                  <label class="form-label" for="qProud">What is something you built, designed, or broke and fixed that
-                    you're proud of?</label>
-                  <textarea id="qProud" class="form-textarea"
-                    placeholder="Could be a script, a game mod, a Figma screen, a broken headphone repair, or a cool side project..."></textarea>
-                </div>
-
-                <div class="form-group">
-                  <label class="form-label" for="qGoal">What would you love to build or learn at Codeis this
-                    semester?</label>
-                  <textarea id="qGoal" class="form-textarea"
-                    placeholder="Tell us your wildest project idea or skill you want to master..."></textarea>
-                </div>
-              </div>
-
-              <!-- Form Navigation Buttons -->
-              <div class="form-nav-actions">
-                <button type="button" class="btn-secondary" id="formPrevBtn" style="display:none;">← PREVIOUS</button>
-                <button type="button" class="btn-primary" id="formNextBtn">NEXT STEP →</button>
-                <button type="submit" class="btn-primary" id="formSubmitBtn" style="display:none;">SUBMIT APPLICATION
-                  ✦</button>
-              </div>
-            </form>
-          </div>
-
-          <!-- Live Applicant Pass (Ticket Card) -->
-          <div class="pass-wrapper">
-            <div class="pass-card-title">✦ LIVE APPLICANT PASS ✦</div>
-            <div class="ticket-pass" id="ticketPassElement">
-              <div class="ticket-header">
-                <div class="ticket-header-logo">CODEIS CLUB</div>
-                <div class="ticket-header-batch">BATCH 2026</div>
-              </div>
-
-              <div class="ticket-body">
-                <div class="ticket-stamp">APPLIED</div>
-
-                <div class="ticket-profile-row">
-                  <div class="ticket-avatar" id="ticketAvatar">👾</div>
-                  <div class="ticket-info">
-                    <h4 id="ticketName">Alex Mercer</h4>
-                    <div class="ticket-meta" id="ticketMeta">1st Year · Batch of 2026</div>
-                    <span class="ticket-track-badge" id="ticketTrackBadge">★ Engineering & Web</span>
-                  </div>
-                </div>
-
-                <div class="ticket-details-grid">
-                  <div class="ticket-detail-item">
-                    <div class="ticket-detail-label">Roll / USN</div>
-                    <div class="ticket-detail-val" id="ticketRoll">1MS24CS042</div>
-                  </div>
-                  <div class="ticket-detail-item">
-                    <div class="ticket-detail-label">Major / Branch</div>
-                    <div class="ticket-detail-val" id="ticketBranch">Computer Science</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="ticket-barcode-row">
-                <div class="ticket-barcode" id="ticketBarcode">||| | |||| || ||| |||| | |||</div>
-                <div class="ticket-pass-id" id="ticketPassId">CIS-26-8492</div>
-              </div>
-            </div>
-
-            <div class="pass-actions">
-              <button class="btn-primary" id="downloadPassBtn" style="font-size:13px; padding:10px 20px;">
-                📥 DOWNLOAD PASS PNG
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- ==================== FAQS SECTION ==================== -->
     <section class="faq-section" id="faqs">
@@ -644,7 +454,7 @@
   <!-- Confetti Canvas -->
   <canvas id="confettiCanvas"></canvas>
 
-  <script src="app.js?v=4"></script>
+  <script src="app.js?v=5"></script>
 </body>
 
 </html>

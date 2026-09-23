@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // initCountdown removed
   initRangoliTrims();
   initTracks();
-  initApplicationFlow();
   initNoticeBoard();
   initFAQs();
   initConfetti();
@@ -284,16 +283,7 @@ function initTracks() {
   const trackApplyBtn = document.getElementById('trackApplyBtn');
   if (trackApplyBtn) {
     trackApplyBtn.addEventListener('click', () => {
-      const target = trackApplyBtn.getAttribute('data-target-track') || 'eng';
-      if (target === 'design') {
-        window.open('https://chat.whatsapp.com/CDxBHMMrirO9hAZKxAyhS2?mode=gi_t', '_blank');
-        return;
-      }
-      selectFormTrack(target);
-      const applySection = document.getElementById('apply');
-      if (applySection) {
-        applySection.scrollIntoView({ behavior: 'smooth' });
-      }
+      window.open('https://chat.whatsapp.com/CDxBHMMrirO9hAZKxAyhS2?mode=gi_t', '_blank');
     });
   }
 }
