@@ -105,7 +105,7 @@ function initRangoliTrims() {
    4. TRACKS & DOMAINS EXPLORER DATA & SWITCHING
    ========================================================= */
 const ENGINEERING_CHALLENGE_BRIEF_URL = "./docs/AI_Build_Challenge_Brief.pdf";
-const ENGINEERING_CHALLENGE_SUBMISSION_URL = "https://docs.google.com/forms/d/e/1FAIpQLSeu4Yw5WJrv5cadVtFUPmngnFuNrVH8LVkjmL0FJZhovYgyug/viewform?usp=dialog";
+const ENGINEERING_CHALLENGE_SUBMISSION_URL = "https://chat.whatsapp.com/CDxBHMMrirO9hAZKxAyhS2?mode=gi_t";
 
 const tracksData = {
   eng: {
@@ -286,7 +286,7 @@ function initTracks() {
     trackApplyBtn.addEventListener('click', () => {
       const target = trackApplyBtn.getAttribute('data-target-track') || 'eng';
       if (target === 'design') {
-        window.open('https://docs.google.com/forms/d/e/1FAIpQLSdFBo5Gr0g2PecGoY797lnGLXv_NeZTPAIx6huXLWELReNOjg/viewform?usp=publish-editor', '_blank');
+        window.open('https://chat.whatsapp.com/CDxBHMMrirO9hAZKxAyhS2?mode=gi_t', '_blank');
         return;
       }
       selectFormTrack(target);
